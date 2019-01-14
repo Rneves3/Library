@@ -1,9 +1,9 @@
-# Scrap Yard
+# Innovative Library
 
 
 
-    This project can manage the pieces of any scrap metal stored in a database through a webApp.
-    To make it easier to search for speficic parts that costumers may need, instead of running in the scrap, the owner can just check his app and search the required part to see if it exists and where it is. 
+    This project can manage the books, journals and DVD's stored in a database through a webApp.
+    To make it easier to search for any artifact, it is used a searching tool in order to speed the searching process. 
     
     About responsabilities we are going to divide the project by classes, we don't have fixed responsabilities but we are going to try to develop half of the classes each one and always working together to make it easy.
     
