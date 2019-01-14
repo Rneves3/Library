@@ -1,0 +1,335 @@
+CREATE TABLE journal (
+  id bigint auto_increment,
+  publication_date timestamp not null,
+  authors varchar(255) ,
+  title varchar(255) not null,
+  publisher varchar(50),
+  volume varchar(255),
+  location varchar(255),
+  primary key (id));
+  
+CREATE TABLE book (
+  id bigint auto_increment,
+  title varchar(50) not null,
+  author varchar(50),
+  publisher varchar(50),
+  date timestamp not null,
+  code varchar(50),
+  location varchar(255),
+  primary key (id));
+
+CREATE TABLE dvd (
+  id bigint auto_increment,
+  title varchar(50) not null,
+  actors varchar(200),
+  format varchar(50),
+  runtime int(10),
+  location varchar(255),
+  primary key (id));
+
+
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (1, '2007-09-08', 'Fernandez', 'Flexidy', 'gov.hhs.Lotstring', 9, 'Moulton');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (2, '2012-11-18', 'Rice', 'Ronstring', 'com.goodreads.Viva', 15, 'Carberry');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (3, '1995-03-05', 'Olson', 'Zaam-Dox', 'be.youtu.Domainer', 18, 'Independence');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (4, '2010-02-26', 'Hughes', 'Konklux', 'com.linkedin.Voltsillam', 61, 'Brickson Park');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (5, '2003-07-11', 'Murphy', 'Cookley', 'com.feedburner.Treeflex', 74, 'Division');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (6, '2011-09-28', 'Riley', 'Biodex', 'gov.ed.Sub-Ex', 44, 'Swallow');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (7, '2016-07-22', 'Reyes', 'Job', 'gov.ftc.Bitwolf', 90, 'Garrison');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (8, '1994-08-31', 'Berry', 'Zamit', 'com.chicagotribune.Subin', 95, 'Melrose');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (9, '2003-06-11', 'Clark', 'Keylex', 'com.bloomberg.Otcom', 24, 'Bay');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (10, '2006-10-16', 'Garcia', 'Zoolab', 'org.gmpg.Bytecard', 2, 'Park Meadow');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (11, '2007-12-26', 'Russell', 'Pannier', 'com.boston.Stronghold', 36, 'Bayside');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (12, '2010-11-27', 'Hamilton', 'Bytecard', 'com.elpais.Keylex', 64, 'Killdeer');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (13, '2009-01-07', 'Williams', 'Opela', 'com.addtoany.Trippledex', 81, 'Village Green');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (14, '2002-12-20', 'Austin', 'Zamit', 'com.addtoany.Aerified', 24, 'Cottonwood');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (15, '2003-04-10', 'Robinson', 'Lotlux', 'cn.desdev.Sonair', 86, 'Clyde Gallagher');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (16, '2005-03-20', 'Martinez', 'Sub-Ex', 'com.com.Alphazap', 46, 'Sutherland');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (17, '2013-12-07', 'Washington', 'Latlux', 'cn.360.Hatity', 59, 'Fremont');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (18, '1993-06-14', 'Watson', 'Fix San', 'com.salon.Tin', 31, 'Debra');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (19, '2003-11-20', 'Weaver', 'Andalax', 'org.apache.Kanlam', 14, 'Shoshone');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (20, '2016-09-27', 'Hawkins', 'Matsoft', 'com.xinhuanet.Opela', 96, 'Spohn');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (21, '2007-04-02', 'Fields', 'Zathin', 'uk.nhs.Konklab', 29, 'Express');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (22, '2007-12-07', 'Shaw', 'Lotstring', 'net.ovh.Fix San', 33, 'Anhalt');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (23, '2012-05-28', 'Duncan', 'Konklab', 'net.earthlink.Toughjoyfax', 89, 'Comanche');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (24, '2016-03-31', 'Rivera', 'Lotstring', 'com.prweb.Job', 31, 'Holy Cross');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (25, '2000-07-17', 'Mccoy', 'Zoolab', 'net.earthlink.Zaam-Dox', 47, 'Lakewood Gardens');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (26, '2012-09-09', 'Williamson', 'Bitchip', 'jp.ne.so-net.Regrant', 48, 'Forest');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (27, '2003-01-06', 'Reed', 'Tres-Zap', 'com.disqus.Kanlam', 2, 'Esch');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (28, '2014-02-10', 'Wells', 'Tres-Zap', 'com.hibu.Y-find', 80, 'Sugar');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (29, '1994-05-13', 'Barnes', 'Otcom', 'com.freewebs.Temp', 68, 'Duke');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (30, '2005-03-16', 'Ellis', 'Cardify', 'ru.google.Fintone', 4, 'Carpenter');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (31, '2003-04-01', 'Ferguson', 'Opela', 'au.gov.oaic.Greenlam', 54, 'Memorial');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (32, '1998-05-23', 'Mendoza', 'Solarbreeze', 'com.topsy.Viva', 90, 'Farragut');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (33, '1998-09-02', 'Long', 'Trippledex', 'com.bluehost.Home Ing', 27, 'Golf');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (34, '1994-02-14', 'Watson', 'Domainer', 'com.google.It', 16, 'Gale');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (35, '2013-11-28', 'Mendoza', 'Kanlam', 'com.elegantthemes.Konklab', 66, 'Kinsman');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (36, '1999-01-04', 'Frazier', 'Alpha', 'edu.cmu.Sub-Ex', 7, 'Forster');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (37, '1999-06-17', 'Porter', 'Asoka', 'com.washingtonpost.Opela', 58, 'Oneill');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (38, '2001-08-02', 'Gonzalez', 'Sonair', 'com.nba.Stim', 62, 'Springview');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (39, '2002-04-03', 'Barnes', 'Ronstring', 'org.gmpg.Mat Lam Tam', 53, 'Oak');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (40, '2009-04-07', 'Harrison', 'Transcof', 'edu.tamu.Konklux', 46, 'Morrow');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (41, '2005-12-12', 'Martinez', 'Zamit', 'net.a8.Fix San', 67, 'Hudson');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (42, '2003-12-29', 'Ruiz', 'Stronghold', 'com.samsung.Vagram', 45, 'Burrows');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (43, '2005-05-07', 'Tucker', 'Job', 'com.rediff.Home Ing', 28, 'Loeprich');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (44, '2013-10-24', 'Gilbert', 'Duobam', 'cn.gov.miibeian.Mat Lam Tam', 100, 'Starling');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (45, '1999-01-07', 'Flores', 'Cardguard', 'cz.phoca.Zontrax', 99, 'Sheridan');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (46, '1993-07-04', 'Wilson', 'Ronstring', 'edu.illinois.Konklab', 4, 'Waywood');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (47, '2003-04-15', 'Williams', 'Duobam', 'com.wordpress.Stringtough', 14, 'Carberry');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (48, '1994-01-21', 'Hawkins', 'Fix San', 'org.archive.Regrant', 37, 'Vernon');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (49, '2003-02-08', 'Gomez', 'Bigtax', 'com.twitter.Konklux', 23, 'Lindbergh');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (50, '2013-11-08', 'Wilson', 'Holdlamis', 'fm.last.Daltfresh', 3, 'Montana');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (51, '2002-05-29', 'Ruiz', 'It', 'ru.google.Matsoft', 23, 'Petterle');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (52, '2003-03-24', 'Peters', 'Cardify', 'cn.com.sina.Holdlamis', 20, 'Victoria');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (53, '1999-05-14', 'Oliver', 'Latlux', 'gov.ed.Stringtough', 35, 'Meadow Ridge');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (54, '2014-05-28', 'Harvey', 'Fintone', 'net.clickbank.Voltsillam', 37, 'Heffernan');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (55, '2005-07-13', 'Green', 'Ventosanzap', 'int.who.It', 52, 'Roxbury');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (56, '1997-03-01', 'Stone', 'Aerified', 'gov.ca.Zaam-Dox', 3, 'Monica');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (57, '2000-10-21', 'Brooks', 'Home Ing', 'org.simplemachines.Andalax', 80, '2nd');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (58, '2010-05-12', 'Berry', 'It', 'com.economist.Gembucket', 97, 'Kedzie');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (59, '2006-09-14', 'Cook', 'Fixflex', 'jp.co.infoseek.Trippledex', 40, 'Tennessee');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (60, '2004-12-28', 'Gomez', 'Redhold', 'com.prnewswire.Domainer', 21, 'Old Gate');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (61, '1996-08-31', 'Medina', 'Flowdesk', 'com.aol.Prodder', 81, 'Holy Cross');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (62, '2016-06-10', 'Clark', 'Asoka', 'com.foxnews.Zontrax', 93, 'Morrow');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (63, '2007-06-28', 'Little', 'Alphazap', 'edu.msu.Solarbreeze', 85, 'Melrose');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (64, '2007-02-01', 'Frazier', 'Wrapsafe', 'net.comcast.Bamity', 68, 'Anhalt');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (65, '1993-06-30', 'Gilbert', 'Biodex', 'net.earthlink.Solarbreeze', 48, 'School');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (66, '1999-03-15', 'Riley', 'Zoolab', 'ly.ow.Veribet', 85, 'Moland');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (67, '2004-12-03', 'Chapman', 'Hatity', 'gov.noaa.Cardguard', 21, 'Stoughton');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (68, '2003-05-16', 'Kelley', 'Gembucket', 'cc.tiny.Vagram', 99, 'Morrow');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (69, '1999-05-02', 'Nichols', 'Treeflex', 'com.hostgator.Sub-Ex', 85, 'Russell');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (70, '2006-03-26', 'Watson', 'Gembucket', 'com.oracle.Cardguard', 4, 'Loomis');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (71, '2011-10-05', 'Gardner', 'Tresom', 'com.ezinearticles.It', 64, 'Heffernan');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (72, '2015-03-18', 'Lawrence', 'Holdlamis', 'com.homestead.Tresom', 13, 'Northfield');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (73, '1995-07-21', 'Jordan', 'Rank', 'com.webs.Regrant', 9, 'Oriole');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (74, '2005-07-31', 'Arnold', 'Alpha', 'org.simplemachines.Alpha', 33, 'Valley Edge');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (75, '2002-09-21', 'Pierce', 'Regrant', 'edu.tamu.Aerified', 55, '2nd');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (76, '2002-08-21', 'Cruz', 'Aerified', 'com.seattletimes.Redhold', 78, 'Banding');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (77, '1996-10-25', 'Morris', 'Prodder', 'edu.ucsd.Sonsing', 89, 'Annamark');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (78, '1999-03-28', 'King', 'Holdlamis', 'com.cyberchimps.Zamit', 76, 'Dryden');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (79, '2007-06-14', 'Kennedy', 'Matsoft', 'com.goodreads.Temp', 2, 'Kedzie');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (80, '2008-01-15', 'Scott', 'Tempsoft', 'com.printfriendly.Domainer', 75, 'Corscot');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (81, '1995-06-05', 'Reed', 'Bamity', 'org.dmoz.Overhold', 70, 'Packers');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (82, '2004-03-02', 'Fowler', 'Pannier', 'com.diigo.Duobam', 90, 'Fordem');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (83, '1994-06-11', 'Myers', 'Cardify', 'com.nytimes.Tampflex', 26, 'La Follette');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (84, '2002-12-05', 'Dixon', 'Viva', 'com.nytimes.Redhold', 76, 'Jana');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (85, '2007-05-15', 'Russell', 'Daltfresh', 'cc.tiny.Latlux', 74, 'Bluejay');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (86, '2015-09-29', 'Miller', 'Treeflex', 'la.51.Sonsing', 86, 'Farmco');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (87, '1993-06-18', 'Morrison', 'Stim', 'com.fastcompany.Biodex', 71, 'Hauk');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (88, '2013-04-03', 'Nelson', 'Otcom', 'com.marriott.Zontrax', 22, 'South');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (89, '2003-06-27', 'Stevens', 'Fixflex', 'uk.co.ebay.Trippledex', 57, 'Spaight');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (90, '2010-02-23', 'Hart', 'Voyatouch', 'cn.com.china.Ronstring', 70, 'Darwin');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (91, '2005-12-10', 'Turner', 'Job', 'edu.si.Zamit', 27, 'Caliangt');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (92, '2008-09-20', 'Carr', 'Keylex', 'net.sourceforge.Bytecard', 24, 'Nelson');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (93, '2010-08-30', 'Bryant', 'Alphazap', 'com.chicagotribune.Stronghold', 49, 'Veith');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (94, '1993-04-04', 'Murray', 'Span', 'org.dmoz.Trippledex', 23, 'Northridge');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (95, '1998-03-08', 'Mccoy', 'It', 'info.aboutads.Zontrax', 44, 'Hoard');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (96, '2007-09-17', 'Sanders', 'Cardguard', 'com.sun.Tin', 28, 'Sauthoff');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (97, '2007-07-07', 'Pierce', 'Zaam-Dox', 'com.facebook.Tempsoft', 82, 'Homewood');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (98, '2011-08-13', 'Jenkins', 'Cardify', 'be.youtu.Temp', 42, 'Del Sol');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (99, '2016-07-15', 'Reed', 'Toughjoyfax', 'jp.or.plala.Bitwolf', 46, 'Packers');
+insert into journal (id, publication_date, authors, title, publisher, volume, location) values (100, '2015-08-03', 'Moore', 'Regrant', 'be.youtu.Prodder', 21, 'Duke');
+
+
+
+insert into book (id, title, author, publisher, date, code, location) values (1, 'Stim', 'Brooks', 'com.bandcamp.Mat Lam Tam', '1998-05-16', '619-59-1004', 'Debra');
+insert into book (id, title, author, publisher, date, code, location) values (2, 'Fix San', 'Mitchell', 'com.nationalgeographic.Zamit', '2010-09-17', '777-06-4264', 'Corry');
+insert into book (id, title, author, publisher, date, code, location) values (3, 'Cookley', 'Owens', 'net.comcast.Prodder', '2009-05-20', '156-41-0480', 'Pankratz');
+insert into book (id, title, author, publisher, date, code, location) values (4, 'Stronghold', 'Crawford', 'jp.ameblo.Mat Lam Tam', '1999-03-19', '675-37-4431', 'Maple Wood');
+insert into book (id, title, author, publisher, date, code, location) values (5, 'Alphazap', 'Mendoza', 'com.arstechnica.Asoka', '2014-09-16', '648-71-4130', 'Fieldstone');
+insert into book (id, title, author, publisher, date, code, location) values (6, 'Quo Lux', 'Simpson', 'edu.cmu.Sonsing', '2006-06-14', '966-36-9612', 'Schurz');
+insert into book (id, title, author, publisher, date, code, location) values (7, 'Bytecard', 'Collins', 'com.salon.Lotstring', '1997-06-11', '358-28-4427', 'Sherman');
+insert into book (id, title, author, publisher, date, code, location) values (8, 'Prodder', 'Richardson', 'com.msn.Zathin', '1996-02-13', '404-63-3228', 'Packers');
+insert into book (id, title, author, publisher, date, code, location) values (9, 'Alphazap', 'Powell', 'cn.com.china.Toughjoyfax', '2011-04-14', '401-72-0732', 'Packers');
+insert into book (id, title, author, publisher, date, code, location) values (10, 'Regrant', 'Hill', 'com.bizjournals.Keylex', '1995-01-12', '238-49-0209', 'Portage');
+insert into book (id, title, author, publisher, date, code, location) values (11, 'Sonsing', 'Ramirez', 'gov.usa.Bitchip', '1997-01-18', '802-58-1907', 'Colorado');
+insert into book (id, title, author, publisher, date, code, location) values (12, 'Sonsing', 'Armstrong', 'com.netscape.Cookley', '1995-01-29', '578-14-6238', 'Weeping Birch');
+insert into book (id, title, author, publisher, date, code, location) values (13, 'Stringtough', 'Pierce', 'com.ft.Alpha', '2008-04-28', '783-15-3075', 'Bobwhite');
+insert into book (id, title, author, publisher, date, code, location) values (14, 'Treeflex', 'Meyer', 'com.shutterfly.Matsoft', '2007-11-04', '304-14-7818', 'Fallview');
+insert into book (id, title, author, publisher, date, code, location) values (15, 'Cardify', 'Jenkins', 'pl.home.Subin', '2012-07-29', '799-03-0721', 'Morningstar');
+insert into book (id, title, author, publisher, date, code, location) values (16, 'Pannier', 'Hall', 'com.shutterfly.Gembucket', '2006-04-27', '939-72-0806', 'High Crossing');
+insert into book (id, title, author, publisher, date, code, location) values (17, 'Voltsillam', 'Watkins', 'org.archive.Daltfresh', '2002-03-10', '823-55-3556', 'Oneill');
+insert into book (id, title, author, publisher, date, code, location) values (18, 'Sub-Ex', 'Burns', 'com.go.Flexidy', '1995-07-27', '814-90-8443', 'Schmedeman');
+insert into book (id, title, author, publisher, date, code, location) values (19, 'Tres-Zap', 'Roberts', 'int.who.Stringtough', '2008-02-08', '443-10-4468', 'Anhalt');
+insert into book (id, title, author, publisher, date, code, location) values (20, 'Greenlam', 'Reyes', 'org.networkadvertising.Viva', '1998-03-07', '780-54-0428', 'Jenna');
+insert into book (id, title, author, publisher, date, code, location) values (21, 'Lotstring', 'Henderson', 'org.slashdot.Matsoft', '2005-05-22', '282-76-0224', 'Barnett');
+insert into book (id, title, author, publisher, date, code, location) values (22, 'Zontrax', 'Hernandez', 'pl.google.Temp', '1999-11-30', '803-95-0430', 'Melody');
+insert into book (id, title, author, publisher, date, code, location) values (23, 'Solarbreeze', 'Patterson', 'edu.umich.Voltsillam', '2009-08-09', '940-66-3358', 'Onsgard');
+insert into book (id, title, author, publisher, date, code, location) values (24, 'Fix San', 'Ferguson', 'com.addtoany.Asoka', '2012-05-06', '174-50-7756', 'Hagan');
+insert into book (id, title, author, publisher, date, code, location) values (25, 'Konklab', 'Garrett', 'net.slideshare.Temp', '1998-04-24', '686-54-1147', 'International');
+insert into book (id, title, author, publisher, date, code, location) values (26, 'Cookley', 'Riley', 'edu.mit.Tres-Zap', '1998-12-05', '132-04-3098', 'Hanson');
+insert into book (id, title, author, publisher, date, code, location) values (27, 'Y-find', 'Hill', 'com.java.Lotlux', '1997-07-23', '402-37-5244', 'Cascade');
+insert into book (id, title, author, publisher, date, code, location) values (28, 'Bamity', 'Hayes', 'gov.ca.Voyatouch', '2011-06-19', '576-25-3452', 'Redwing');
+insert into book (id, title, author, publisher, date, code, location) values (29, 'Zoolab', 'Griffin', 'com.nydailynews.Daltfresh', '2004-12-13', '666-78-3426', 'Bayside');
+insert into book (id, title, author, publisher, date, code, location) values (30, 'Zamit', 'Price', 'com.discovery.Sonair', '1997-08-10', '979-39-9183', 'Nancy');
+insert into book (id, title, author, publisher, date, code, location) values (31, 'Trippledex', 'Banks', 'com.omniture.Duobam', '1998-07-28', '867-96-9008', 'Birchwood');
+insert into book (id, title, author, publisher, date, code, location) values (32, 'Cookley', 'Nelson', 'com.jimdo.Biodex', '2014-06-10', '400-48-9289', 'Golf');
+insert into book (id, title, author, publisher, date, code, location) values (33, 'Konklux', 'Fox', 'com.marketwatch.Prodder', '2003-08-02', '208-30-1221', 'Springview');
+insert into book (id, title, author, publisher, date, code, location) values (34, 'Tres-Zap', 'Anderson', 'com.baidu.Latlux', '1998-10-23', '591-80-0576', 'Spenser');
+insert into book (id, title, author, publisher, date, code, location) values (35, 'Namfix', 'Harper', 'com.blogger.Bigtax', '2002-07-07', '706-79-0694', 'Riverside');
+insert into book (id, title, author, publisher, date, code, location) values (36, 'Gembucket', 'Adams', 'org.w3.Ronstring', '2003-05-10', '931-14-9628', 'Saint Paul');
+insert into book (id, title, author, publisher, date, code, location) values (37, 'Rank', 'Riley', 'com.jigsy.Subin', '2004-11-15', '559-18-3729', 'Upham');
+insert into book (id, title, author, publisher, date, code, location) values (38, 'Stronghold', 'Day', 'com.mozilla.Y-Solowarm', '2001-04-26', '828-68-1281', 'Oakridge');
+insert into book (id, title, author, publisher, date, code, location) values (39, 'Zaam-Dox', 'Snyder', 'edu.princeton.Alphazap', '2006-02-28', '970-68-5018', 'Evergreen');
+insert into book (id, title, author, publisher, date, code, location) values (40, 'Alpha', 'Weaver', 'com.xrea.Bitchip', '1996-07-15', '929-34-6286', 'Forest Run');
+insert into book (id, title, author, publisher, date, code, location) values (41, 'Bytecard', 'Harrison', 'cz.toplist.Zaam-Dox', '2000-08-21', '732-41-9993', 'Summer Ridge');
+insert into book (id, title, author, publisher, date, code, location) values (42, 'Zamit', 'Rogers', 'us.icio.Asoka', '2008-06-26', '855-27-1395', 'Moulton');
+insert into book (id, title, author, publisher, date, code, location) values (43, 'Greenlam', 'Rose', 'com.dailymotion.Hatity', '1999-02-14', '499-19-5066', 'Waxwing');
+insert into book (id, title, author, publisher, date, code, location) values (44, 'Ventosanzap', 'Fowler', 'com.time.Stronghold', '2013-10-14', '428-98-8033', 'Bonner');
+insert into book (id, title, author, publisher, date, code, location) values (45, 'Voltsillam', 'Duncan', 'com.cocolog-nifty.Y-find', '2010-12-08', '758-68-3461', 'Transport');
+insert into book (id, title, author, publisher, date, code, location) values (46, 'Fix San', 'Mendoza', 'com.eventbrite.Redhold', '1998-01-14', '503-46-2742', 'Ludington');
+insert into book (id, title, author, publisher, date, code, location) values (47, 'Cardify', 'Torres', 'io.pen.Flowdesk', '2012-03-26', '606-70-7646', 'Helena');
+insert into book (id, title, author, publisher, date, code, location) values (48, 'Overhold', 'Thompson', 'fr.google.Regrant', '2013-12-13', '521-19-7225', 'Main');
+insert into book (id, title, author, publisher, date, code, location) values (49, 'Voltsillam', 'Arnold', 'com.linkedin.Tempsoft', '2009-10-25', '704-23-2454', 'Stephen');
+insert into book (id, title, author, publisher, date, code, location) values (50, 'Wrapsafe', 'Stewart', 'cc.tiny.Opela', '2005-05-14', '429-13-5947', 'Hoffman');
+insert into book (id, title, author, publisher, date, code, location) values (51, 'Transcof', 'Peterson', 'com.globo.Prodder', '1998-09-12', '532-43-3913', 'Scofield');
+insert into book (id, title, author, publisher, date, code, location) values (52, 'Transcof', 'Cunningham', 'int.who.Domainer', '1999-05-14', '885-87-7745', 'Hintze');
+insert into book (id, title, author, publisher, date, code, location) values (53, 'Subin', 'Ferguson', 'com.twitter.Voyatouch', '2013-02-22', '534-85-4376', 'Clarendon');
+insert into book (id, title, author, publisher, date, code, location) values (54, 'Viva', 'Dunn', 'au.com.smh.Tempsoft', '2009-06-12', '431-53-6459', 'Schmedeman');
+insert into book (id, title, author, publisher, date, code, location) values (55, 'Ronstring', 'Stevens', 'com.stumbleupon.Stringtough', '2002-05-17', '728-52-9093', '6th');
+insert into book (id, title, author, publisher, date, code, location) values (56, 'Solarbreeze', 'Shaw', 'org.slashdot.Prodder', '2008-07-13', '690-44-9659', 'Maple');
+insert into book (id, title, author, publisher, date, code, location) values (57, 'Job', 'Bennett', 'net.cpanel.Quo Lux', '1998-01-19', '501-96-7397', 'Hovde');
+insert into book (id, title, author, publisher, date, code, location) values (58, 'Bitchip', 'Cook', 'com.eventbrite.Matsoft', '2011-07-19', '370-93-8335', 'Corben');
+insert into book (id, title, author, publisher, date, code, location) values (59, 'Quo Lux', 'Howard', 'org.bbb.Duobam', '2003-06-23', '934-98-7346', 'Farwell');
+insert into book (id, title, author, publisher, date, code, location) values (60, 'Holdlamis', 'Sullivan', 'com.shinystat.Zontrax', '2000-04-06', '725-60-3535', 'Knutson');
+insert into book (id, title, author, publisher, date, code, location) values (61, 'Zontrax', 'Morris', 'edu.illinois.Keylex', '2010-10-24', '998-05-8990', 'Eliot');
+insert into book (id, title, author, publisher, date, code, location) values (62, 'Tampflex', 'Burke', 'de.google.Alpha', '2016-03-14', '453-86-2689', 'Colorado');
+insert into book (id, title, author, publisher, date, code, location) values (63, 'Bitchip', 'Burns', 'com.cbslocal.Trippledex', '2016-11-15', '990-82-0036', 'Lawn');
+insert into book (id, title, author, publisher, date, code, location) values (64, 'Sub-Ex', 'Myers', 'com.weather.Temp', '2012-10-04', '448-28-5867', 'Onsgard');
+insert into book (id, title, author, publisher, date, code, location) values (65, 'Asoka', 'Hernandez', 'com.pinterest.Job', '2007-11-04', '779-29-2549', 'Corscot');
+insert into book (id, title, author, publisher, date, code, location) values (66, 'Bigtax', 'Garrett', 'ly.ow.Greenlam', '2008-11-09', '396-00-7138', 'Dapin');
+insert into book (id, title, author, publisher, date, code, location) values (67, 'Trippledex', 'Black', 'org.unesco.Cardify', '1999-10-30', '640-61-4633', 'Vidon');
+insert into book (id, title, author, publisher, date, code, location) values (68, 'Redhold', 'Gray', 'com.youku.Alphazap', '2011-07-16', '213-17-6852', 'Trailsway');
+insert into book (id, title, author, publisher, date, code, location) values (69, 'Zamit', 'Ortiz', 'com.amazonaws.Alphazap', '2015-04-14', '917-56-4217', 'Badeau');
+insert into book (id, title, author, publisher, date, code, location) values (70, 'Tres-Zap', 'Martin', 'tv.ustream.Vagram', '2009-08-07', '925-06-3167', 'Golden Leaf');
+insert into book (id, title, author, publisher, date, code, location) values (71, 'Toughjoyfax', 'Ortiz', 'com.qq.Regrant', '2006-09-19', '713-06-7767', 'Golf');
+insert into book (id, title, author, publisher, date, code, location) values (72, 'Cardguard', 'Woods', 'fr.unblog.Biodex', '2011-10-26', '534-38-7406', 'Coolidge');
+insert into book (id, title, author, publisher, date, code, location) values (73, 'Fixflex', 'Murray', 'gov.senate.Cardguard', '2003-12-02', '468-96-7000', 'Bashford');
+insert into book (id, title, author, publisher, date, code, location) values (74, 'Biodex', 'Reid', 'com.sciencedaily.Opela', '2006-02-05', '794-99-5597', 'Gerald');
+insert into book (id, title, author, publisher, date, code, location) values (75, 'Cookley', 'Powell', 'com.youtube.Konklux', '1999-08-16', '555-56-5677', 'Holy Cross');
+insert into book (id, title, author, publisher, date, code, location) values (76, 'Viva', 'Moreno', 'com.mtv.Konklux', '2006-06-03', '682-89-5733', 'Bunting');
+insert into book (id, title, author, publisher, date, code, location) values (77, 'Daltfresh', 'Matthews', 'uk.co.amazon.Opela', '2001-12-18', '874-33-9489', 'Kennedy');
+insert into book (id, title, author, publisher, date, code, location) values (78, 'Bitchip', 'Ortiz', 'mil.army.Bamity', '1999-04-25', '805-35-7378', 'Melrose');
+insert into book (id, title, author, publisher, date, code, location) values (79, 'Stronghold', 'Cole', 'com.issuu.Lotlux', '2016-06-20', '540-92-9551', 'Northwestern');
+insert into book (id, title, author, publisher, date, code, location) values (80, 'Matsoft', 'Palmer', 'cn.gov.miibeian.Lotlux', '1996-11-01', '888-35-3557', 'Golf');
+insert into book (id, title, author, publisher, date, code, location) values (81, 'Stringtough', 'Stone', 'net.sourceforge.Sub-Ex', '2006-11-04', '577-16-3943', 'Everett');
+insert into book (id, title, author, publisher, date, code, location) values (82, 'Latlux', 'Mills', 'edu.psu.Stim', '2014-02-23', '418-29-5724', 'Reinke');
+insert into book (id, title, author, publisher, date, code, location) values (83, 'Konklux', 'Romero', 'me.about.Fixflex', '1999-11-26', '613-20-2367', 'Dovetail');
+insert into book (id, title, author, publisher, date, code, location) values (84, 'Rank', 'Marshall', 'com.acquirethisname.Aerified', '2000-11-15', '482-83-9434', 'Armistice');
+insert into book (id, title, author, publisher, date, code, location) values (85, 'Gembucket', 'Medina', 'com.flickr.Sub-Ex', '1999-02-06', '155-21-4669', 'Park Meadow');
+insert into book (id, title, author, publisher, date, code, location) values (86, 'Subin', 'George', 'gov.epa.Aerified', '2006-11-20', '761-89-8548', 'Lake View');
+insert into book (id, title, author, publisher, date, code, location) values (87, 'Zathin', 'Lee', 'jp.i2i.Regrant', '2009-12-14', '673-12-9068', 'Mesta');
+insert into book (id, title, author, publisher, date, code, location) values (88, 'Holdlamis', 'Willis', 'it.tuttocitta.Viva', '1998-08-30', '195-39-0621', 'Valley Edge');
+insert into book (id, title, author, publisher, date, code, location) values (89, 'Flowdesk', 'Walker', 'com.skype.Trippledex', '1999-12-19', '144-82-8620', 'Bluestem');
+insert into book (id, title, author, publisher, date, code, location) values (90, 'Span', 'Hunter', 'com.techcrunch.Solarbreeze', '2016-08-09', '344-00-5817', 'Summer Ridge');
+insert into book (id, title, author, publisher, date, code, location) values (91, 'Voyatouch', 'Butler', 'com.accuweather.Lotstring', '2013-12-09', '730-29-3318', 'Muir');
+insert into book (id, title, author, publisher, date, code, location) values (92, 'Sub-Ex', 'Lopez', 'edu.arizona.Viva', '2009-10-31', '795-26-4101', 'Trailsway');
+insert into book (id, title, author, publisher, date, code, location) values (93, 'Bamity', 'Graham', 'net.cpanel.Kanlam', '2013-02-21', '564-86-8682', 'Shelley');
+insert into book (id, title, author, publisher, date, code, location) values (94, 'Fintone', 'Stone', 'com.baidu.Stronghold', '2009-03-23', '523-80-6865', 'Gateway');
+insert into book (id, title, author, publisher, date, code, location) values (95, 'Tres-Zap', 'Riley', 'com.bloomberg.Overhold', '2002-12-02', '255-09-7169', 'Weeping Birch');
+insert into book (id, title, author, publisher, date, code, location) values (96, 'Flexidy', 'Gray', 'au.net.abc.Ventosanzap', '2008-03-20', '336-18-1910', 'Chive');
+insert into book (id, title, author, publisher, date, code, location) values (97, 'Span', 'George', 'net.a8.Tempsoft', '2012-08-06', '139-83-1937', 'Burning Wood');
+insert into book (id, title, author, publisher, date, code, location) values (98, 'Fintone', 'Owens', 'com.bravesites.Cookley', '2011-02-06', '489-46-7029', 'Clove');
+insert into book (id, title, author, publisher, date, code, location) values (99, 'Bamity', 'Bennett', 'gov.noaa.Fintone', '1999-04-27', '425-40-6071', 'Norway Maple');
+insert into book (id, title, author, publisher, date, code, location) values (100, 'Zontrax', 'Reed', 'gov.hhs.Toughjoyfax', '2005-06-21', '842-61-5369', 'Chive');
+
+
+insert into dvd (id, title, actors, format, runtime, location) values (1, 'harness vertical communities', 'Ronald Howard', 'Burmese', 960, 'Havey');
+insert into dvd (id, title, actors, format, runtime, location) values (2, 'generate dynamic solutions', 'Tina Little', 'Swahili', 98, 'Sugar');
+insert into dvd (id, title, actors, format, runtime, location) values (3, 'e-enable e-business e-services', 'Evelyn Chavez', 'Czech', 759, '7th');
+insert into dvd (id, title, actors, format, runtime, location) values (4, 'matrix seamless content', 'Mary Myers', 'Haitian Creole', 378, 'Vahlen');
+insert into dvd (id, title, actors, format, runtime, location) values (5, 'enhance bricks-and-clicks functionalities', 'Alan Fuller', 'Māori', 179, 'Mariners Cove');
+insert into dvd (id, title, actors, format, runtime, location) values (6, 'streamline bleeding-edge eyeballs', 'Phillip Fox', 'Tsonga', 331, 'Lake View');
+insert into dvd (id, title, actors, format, runtime, location) values (7, 'matrix leading-edge communities', 'Larry Grant', 'Italian', 843, 'Mcbride');
+insert into dvd (id, title, actors, format, runtime, location) values (8, 'reinvent seamless solutions', 'Harold Day', 'Romanian', 788, 'Hooker');
+insert into dvd (id, title, actors, format, runtime, location) values (9, 'generate front-end mindshare', 'Sean Phillips', 'Indonesian', 785, 'Ridge Oak');
+insert into dvd (id, title, actors, format, runtime, location) values (10, 'evolve impactful relationships', 'Barbara Simpson', 'Aymara', 117, 'Transport');
+insert into dvd (id, title, actors, format, runtime, location) values (11, 'synthesize enterprise e-business', 'Charles Willis', 'New Zealand Sign Language', 316, 'Haas');
+insert into dvd (id, title, actors, format, runtime, location) values (12, 'benchmark collaborative channels', 'Willie Henderson', 'Pashto', 812, 'Londonderry');
+insert into dvd (id, title, actors, format, runtime, location) values (13, 'architect web-enabled e-tailers', 'Virginia Garza', 'Czech', 448, 'Southridge');
+insert into dvd (id, title, actors, format, runtime, location) values (14, 'scale robust e-business', 'Lori Rose', 'Ndebele', 514, 'Starling');
+insert into dvd (id, title, actors, format, runtime, location) values (15, 'engage proactive technologies', 'Martha Martin', 'Tsonga', 735, 'Bashford');
+insert into dvd (id, title, actors, format, runtime, location) values (16, 'seize 24/7 vortals', 'Marie Fernandez', 'Burmese', 444, 'Service');
+insert into dvd (id, title, actors, format, runtime, location) values (17, 'target cutting-edge methodologies', 'Wayne Lynch', 'Māori', 304, 'Meadow Valley');
+insert into dvd (id, title, actors, format, runtime, location) values (18, 'synergize best-of-breed e-tailers', 'Philip Nichols', 'Tetum', 523, 'Eagan');
+insert into dvd (id, title, actors, format, runtime, location) values (19, 'revolutionize cross-media models', 'Jerry Owens', 'Gujarati', 677, 'Eliot');
+insert into dvd (id, title, actors, format, runtime, location) values (20, 'syndicate clicks-and-mortar web services', 'Maria Crawford', 'Lao', 104, 'Weeping Birch');
+insert into dvd (id, title, actors, format, runtime, location) values (21, 'revolutionize bleeding-edge systems', 'Julia Gonzalez', 'Macedonian', 599, 'Donald');
+insert into dvd (id, title, actors, format, runtime, location) values (22, 'cultivate user-centric portals', 'Melissa Graham', 'Telugu', 383, 'Randy');
+insert into dvd (id, title, actors, format, runtime, location) values (23, 'integrate web-enabled methodologies', 'Edward Edwards', 'Quechua', 613, 'Warbler');
+insert into dvd (id, title, actors, format, runtime, location) values (24, 'productize seamless technologies', 'Steven Wood', 'Burmese', 516, 'Crownhardt');
+insert into dvd (id, title, actors, format, runtime, location) values (25, 'syndicate world-class interfaces', 'Christina Watson', 'Kashmiri', 862, 'Nevada');
+insert into dvd (id, title, actors, format, runtime, location) values (26, 'facilitate bleeding-edge metrics', 'Jessica Myers', 'Telugu', 88, 'Ramsey');
+insert into dvd (id, title, actors, format, runtime, location) values (27, 'redefine B2B architectures', 'Andrew Thompson', 'Greek', 610, 'Northland');
+insert into dvd (id, title, actors, format, runtime, location) values (28, 'transform global action-items', 'Andrea Hamilton', 'Montenegrin', 837, 'Knutson');
+insert into dvd (id, title, actors, format, runtime, location) values (29, 'utilize next-generation technologies', 'Keith Porter', 'Kazakh', 480, 'Cody');
+insert into dvd (id, title, actors, format, runtime, location) values (30, 'incentivize plug-and-play e-business', 'Jean Armstrong', 'Yiddish', 866, 'Meadow Ridge');
+insert into dvd (id, title, actors, format, runtime, location) values (31, 'evolve impactful supply-chains', 'Craig Gibson', 'Catalan', 145, '6th');
+insert into dvd (id, title, actors, format, runtime, location) values (32, 'matrix plug-and-play infrastructures', 'Kathryn Walker', 'Moldovan', 474, 'Northwestern');
+insert into dvd (id, title, actors, format, runtime, location) values (33, 'envisioneer proactive markets', 'Angela Peterson', 'Kyrgyz', 856, 'Village Green');
+insert into dvd (id, title, actors, format, runtime, location) values (34, 'incentivize plug-and-play channels', 'Harry Marshall', 'Afrikaans', 779, 'Elgar');
+insert into dvd (id, title, actors, format, runtime, location) values (35, 'exploit 24/365 e-business', 'Johnny Coleman', 'Polish', 894, 'Lakewood Gardens');
+insert into dvd (id, title, actors, format, runtime, location) values (36, 'generate turn-key niches', 'Marie Meyer', 'Māori', 358, 'Hermina');
+insert into dvd (id, title, actors, format, runtime, location) values (37, 'redefine synergistic relationships', 'Karen Frazier', 'Hebrew', 136, 'Debs');
+insert into dvd (id, title, actors, format, runtime, location) values (38, 'reintermediate intuitive mindshare', 'Norma Mason', 'Italian', 911, 'Orin');
+insert into dvd (id, title, actors, format, runtime, location) values (39, 'aggregate cutting-edge eyeballs', 'Scott Ray', 'Arabic', 712, 'Vahlen');
+insert into dvd (id, title, actors, format, runtime, location) values (40, 'evolve user-centric e-markets', 'Wanda Cole', 'Somali', 610, 'Texas');
+insert into dvd (id, title, actors, format, runtime, location) values (41, 'recontextualize innovative networks', 'Catherine Day', 'Malagasy', 189, 'Fallview');
+insert into dvd (id, title, actors, format, runtime, location) values (42, 'incubate rich markets', 'Jesse Scott', 'Telugu', 570, 'Mayfield');
+insert into dvd (id, title, actors, format, runtime, location) values (43, 'incubate front-end platforms', 'Susan Reed', 'Lao', 549, 'Ridgeway');
+insert into dvd (id, title, actors, format, runtime, location) values (44, 'embrace cutting-edge e-markets', 'Ernest Cox', 'Khmer', 366, 'Stoughton');
+insert into dvd (id, title, actors, format, runtime, location) values (45, 'enable rich web-readiness', 'Cynthia Patterson', 'Telugu', 265, 'Melvin');
+insert into dvd (id, title, actors, format, runtime, location) values (46, 'facilitate proactive paradigms', 'Janet Campbell', 'Tok Pisin', 323, 'Straubel');
+insert into dvd (id, title, actors, format, runtime, location) values (47, 'mesh visionary mindshare', 'Evelyn Sanchez', 'Aymara', 160, 'Mallard');
+insert into dvd (id, title, actors, format, runtime, location) values (48, 'engineer real-time e-services', 'Deborah Jackson', 'Papiamento', 706, 'Havey');
+insert into dvd (id, title, actors, format, runtime, location) values (49, 'envisioneer ubiquitous technologies', 'Diane Tucker', 'Dutch', 167, 'Hallows');
+insert into dvd (id, title, actors, format, runtime, location) values (50, 'engineer bricks-and-clicks niches', 'Jack Myers', 'Czech', 596, 'Northview');
+insert into dvd (id, title, actors, format, runtime, location) values (51, 'syndicate one-to-one deliverables', 'Sarah Jones', 'Amharic', 985, 'Green Ridge');
+insert into dvd (id, title, actors, format, runtime, location) values (52, 'recontextualize cutting-edge experiences', 'Samuel King', 'Filipino', 633, 'Monica');
+insert into dvd (id, title, actors, format, runtime, location) values (53, 'incentivize cross-media markets', 'Jesse Jacobs', 'Macedonian', 821, 'Luster');
+insert into dvd (id, title, actors, format, runtime, location) values (54, 'deploy out-of-the-box metrics', 'Harold Gray', 'Swahili', 607, 'Pennsylvania');
+insert into dvd (id, title, actors, format, runtime, location) values (55, 'enable global architectures', 'Beverly Henry', 'Azeri', 435, 'Moose');
+insert into dvd (id, title, actors, format, runtime, location) values (56, 'embrace world-class solutions', 'Ernest Stewart', 'Marathi', 935, 'Straubel');
+insert into dvd (id, title, actors, format, runtime, location) values (57, 'transition extensible interfaces', 'Frank Hall', 'Tamil', 878, 'Valley Edge');
+insert into dvd (id, title, actors, format, runtime, location) values (58, 'empower world-class platforms', 'Janice Morris', 'Georgian', 728, 'Kim');
+insert into dvd (id, title, actors, format, runtime, location) values (59, 'disintermediate end-to-end niches', 'Johnny Ruiz', 'Swati', 279, 'Waubesa');
+insert into dvd (id, title, actors, format, runtime, location) values (60, 'monetize interactive models', 'Debra Adams', 'Icelandic', 447, 'Spenser');
+insert into dvd (id, title, actors, format, runtime, location) values (61, 'strategize frictionless web services', 'Kathleen Cox', 'Swahili', 789, 'Hanson');
+insert into dvd (id, title, actors, format, runtime, location) values (62, 'implement enterprise solutions', 'Dennis Hudson', 'Kyrgyz', 370, 'Superior');
+insert into dvd (id, title, actors, format, runtime, location) values (63, 'engage revolutionary models', 'Helen Burns', 'Northern Sotho', 164, 'Grover');
+insert into dvd (id, title, actors, format, runtime, location) values (64, 'embrace distributed e-commerce', 'Laura Mccoy', 'Kurdish', 948, 'Swallow');
+insert into dvd (id, title, actors, format, runtime, location) values (65, 'synergize vertical applications', 'Bruce Scott', 'Moldovan', 875, 'Dottie');
+insert into dvd (id, title, actors, format, runtime, location) values (66, 'engineer B2B infomediaries', 'Alan Rose', 'Tok Pisin', 209, 'Grayhawk');
+insert into dvd (id, title, actors, format, runtime, location) values (67, 'reintermediate mission-critical platforms', 'Martha Hunter', 'Somali', 288, 'Menomonie');
+insert into dvd (id, title, actors, format, runtime, location) values (68, 'target magnetic methodologies', 'Jeremy Wood', 'Armenian', 378, 'Sullivan');
+insert into dvd (id, title, actors, format, runtime, location) values (69, 'recontextualize front-end eyeballs', 'Virginia Kelly', 'Pashto', 573, 'Huxley');
+insert into dvd (id, title, actors, format, runtime, location) values (70, 'strategize e-business vortals', 'Benjamin Foster', 'Lao', 445, 'Hazelcrest');
+insert into dvd (id, title, actors, format, runtime, location) values (71, 'incentivize 24/365 relationships', 'Benjamin Hanson', 'Malayalam', 669, 'Sunbrook');
+insert into dvd (id, title, actors, format, runtime, location) values (72, 'leverage leading-edge initiatives', 'Alice Bell', 'German', 451, 'Manufacturers');
+insert into dvd (id, title, actors, format, runtime, location) values (73, 'e-enable enterprise methodologies', 'Sarah Mcdonald', 'Chinese', 82, 'Maple');
+insert into dvd (id, title, actors, format, runtime, location) values (74, 'syndicate revolutionary niches', 'Shawn Weaver', 'Aymara', 105, 'Parkside');
+insert into dvd (id, title, actors, format, runtime, location) values (75, 'orchestrate next-generation architectures', 'Jean Howard', 'Moldovan', 972, 'Mayfield');
+insert into dvd (id, title, actors, format, runtime, location) values (76, 'matrix back-end infrastructures', 'Anne Chavez', 'Tajik', 676, 'Arkansas');
+insert into dvd (id, title, actors, format, runtime, location) values (77, 'scale visionary schemas', 'Beverly Miller', 'Kazakh', 789, 'Division');
+insert into dvd (id, title, actors, format, runtime, location) values (78, 'whiteboard rich schemas', 'Emily Cunningham', 'Bulgarian', 513, 'Ronald Regan');
+insert into dvd (id, title, actors, format, runtime, location) values (79, 'deploy scalable infrastructures', 'Joshua Hicks', 'Pashto', 563, 'Redwing');
+insert into dvd (id, title, actors, format, runtime, location) values (80, 'scale sticky applications', 'Susan Ferguson', 'Icelandic', 394, 'Hooker');
+insert into dvd (id, title, actors, format, runtime, location) values (81, 'enable 24/7 supply-chains', 'Phillip Morgan', 'Lao', 79, 'Ridgeway');
+insert into dvd (id, title, actors, format, runtime, location) values (82, 'facilitate rich deliverables', 'Cheryl Perkins', 'Arabic', 610, 'Victoria');
+insert into dvd (id, title, actors, format, runtime, location) values (83, 'engage synergistic functionalities', 'Kimberly Griffin', 'Kazakh', 374, 'Hagan');
+insert into dvd (id, title, actors, format, runtime, location) values (84, 'enhance bricks-and-clicks web services', 'Janet Dunn', 'Norwegian', 766, 'Anthes');
+insert into dvd (id, title, actors, format, runtime, location) values (85, 'generate compelling eyeballs', 'Ann Ward', 'Montenegrin', 883, 'Cordelia');
+insert into dvd (id, title, actors, format, runtime, location) values (86, 'facilitate cross-media markets', 'Arthur Perez', 'Tsonga', 80, 'Jackson');
+insert into dvd (id, title, actors, format, runtime, location) values (87, 'evolve synergistic e-commerce', 'Robin West', 'Yiddish', 505, 'Buell');
+insert into dvd (id, title, actors, format, runtime, location) values (88, 'repurpose bricks-and-clicks deliverables', 'Mildred Frazier', 'Polish', 842, 'West');
+insert into dvd (id, title, actors, format, runtime, location) values (89, 'reintermediate virtual systems', 'Peter Austin', 'Croatian', 560, 'Reindahl');
+insert into dvd (id, title, actors, format, runtime, location) values (90, 'generate synergistic convergence', 'Christine Simpson', 'Haitian Creole', 988, 'Fulton');
+insert into dvd (id, title, actors, format, runtime, location) values (91, 'embrace plug-and-play mindshare', 'Virginia Long', 'Chinese', 586, 'Hazelcrest');
+insert into dvd (id, title, actors, format, runtime, location) values (92, 'recontextualize interactive systems', 'Theresa Romero', 'Polish', 606, 'Dorton');
+insert into dvd (id, title, actors, format, runtime, location) values (93, 'optimize best-of-breed action-items', 'Alice Hansen', 'Latvian', 345, 'Mayer');
+insert into dvd (id, title, actors, format, runtime, location) values (94, 'optimize dynamic applications', 'Eugene Wright', 'Pashto', 773, 'Johnson');
+insert into dvd (id, title, actors, format, runtime, location) values (95, 'empower granular mindshare', 'Christina Elliott', 'Guaraní', 675, 'Scott');
+insert into dvd (id, title, actors, format, runtime, location) values (96, 'morph granular convergence', 'Albert Fisher', 'Romanian', 115, 'Weeping Birch');
+insert into dvd (id, title, actors, format, runtime, location) values (97, 'scale collaborative infrastructures', 'Ashley Green', 'New Zealand Sign Language', 407, 'Sugar');
+insert into dvd (id, title, actors, format, runtime, location) values (98, 'aggregate mission-critical action-items', 'Russell Shaw', 'New Zealand Sign Language', 655, 'Oak Valley');
+insert into dvd (id, title, actors, format, runtime, location) values (99, 'revolutionize efficient communities', 'Maria Howell', 'Spanish', 538, 'Mallory');
+insert into dvd (id, title, actors, format, runtime, location) values (100, 'harness bleeding-edge convergence', 'Heather Hawkins', 'Norwegian', 440, 'Oriole');
